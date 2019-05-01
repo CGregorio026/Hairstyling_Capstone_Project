@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/* these styles are meant for formatting the pages */
+body {
+    background-color: rgba(255, 190, 10, 0.89);
+    height: 100%;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* this section is meant to make a background which has a bit of blur over it. */
+div.background {
+    content: "";
+    background: url("img/CTE_29.jpg") no-repeat top;
+    position: absolute;
+    filter: blur(5px);
+    height: 300mm;
+    width: 80%;
+}
+
+div.content {
+    position: relative;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2em;
+    height: 300mm;
+    width: 80%;
+}
