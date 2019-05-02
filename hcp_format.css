@@ -1,22 +1,43 @@
 @charset "utf-8";
 
 /* these styles are meant for formatting the pages */
+
+html {
+    background: #43C6AC; 
+    background: -webkit-linear-gradient(to top, #191654, #43C6AC);  
+    background: linear-gradient(to top, #191654, #43C6AC); 
+
+
+}
+
 body {
-    background-color: rgba(255, 190, 10, 0.89);
     height: 100%;
     width: 80%;
-    margin-right: auto;
+
+    background: #3D7EAA;  
+    background: -webkit-linear-gradient(to top, #FFE47A, #3D7EAA);  
+    background: linear-gradient(to top, #FFE47A, #3D7EAA); 
+ 
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: block;
     margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(0, 0, 0, 0.61) 10px 10px 25px;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 11px;
+    background-attachment: fixed;
 }
 
 /* this section is meant to make a background which has a bit of blur over it. */
 div.background {
     content: "";
-    background: url("img/CTE_29.jpg") no-repeat top;
-    position: absolute;
+    background: url("img/CTE_29.jpg") fixed;
     filter: blur(5px);
     height: 300mm;
-    width: 80%;
+    position: absolute;
+    width: 79.45%;
 }
 
 div.content {
@@ -26,4 +47,15 @@ div.content {
     font-size: 2em;
     height: 300mm;
     width: 80%;
+    margin-left: 19px;
+}
+
+div.thanos {
+    position: absolute;
+    margin-top: 19px;
+    font-family: Marker Felt, fantasy;
+}
+
+section.survey {
+
 }
