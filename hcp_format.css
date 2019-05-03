@@ -64,10 +64,6 @@ div.thanos {
     filter: blur(1.5px);
 }
 
-section.survey {
-
-}
-
 nav.horizontalNavigation {
     font-family: Marker Felt, fantasy;
     float: left;
@@ -100,8 +96,4 @@ body>div.content>nav.horizontalNavigation a:visited {
 body>div.content>nav.horizontalNavigation a:hover,
 body>div.content>nav.horizontalNavigation a:active {
     color: rgb(212, 19, 164);
-}
-
-div.formRow {
-    
 }
