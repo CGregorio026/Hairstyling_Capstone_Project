@@ -3,9 +3,9 @@
 /* these styles are meant for formatting the pages */
 
 html {
-    background: #43C6AC; 
-    background: -webkit-linear-gradient(to top, #191654, #43C6AC);  
-    background: linear-gradient(to top, #191654, #43C6AC); 
+    background: #43C6AC;
+    background: -webkit-linear-gradient(to top, #191654, #43C6AC);
+    background: linear-gradient(to top, #191654, #43C6AC);
 
 
 }
@@ -14,10 +14,10 @@ body {
     height: 100%;
     width: 80%;
 
-    background: #3D7EAA;  
-    background: -webkit-linear-gradient(to top, #FFE47A, #3D7EAA);  
-    background: linear-gradient(to top, #FFE47A, #3D7EAA); 
- 
+    background: #3D7EAA;
+    background: -webkit-linear-gradient(to top, #FFE47A, #3D7EAA);
+    background: linear-gradient(to top, #FFE47A, #3D7EAA);
+
 
     margin-top: 50px;
     margin-bottom: 50px;
