@@ -149,7 +149,7 @@ body>div.content>nav.horizontalNavigation a:active {
 /* The active & hover styles make it so therefore the links turn pink when hovered over and are red normally */
 
 div.Contactinfo {
-    color: rgb(243, 230, 41);
+    color: rgb(30, 255, 0);
     position: relative; 
     font-family: 'Nunito', sans-serif;
     margin-left: 200px;
