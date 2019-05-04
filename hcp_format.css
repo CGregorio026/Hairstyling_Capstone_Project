@@ -1,24 +1,21 @@
 @charset "utf-8";
 
-/* these styles are meant for formatting the pages */
+
 
 html {
     background: #43C6AC; 
     background: -webkit-linear-gradient(to top, #191654, #43C6AC);  
     background: linear-gradient(to top, #191654, #43C6AC); 
-
-
 }
+
+/* The main Background of everything */
 
 body {
     height: 100%;
     width: 80%;
-
     background: #3D7EAA;  
     background: -webkit-linear-gradient(to top, #FFE47A, #3D7EAA);  
     background: linear-gradient(to top, #FFE47A, #3D7EAA); 
- 
-
     margin-top: 50px;
     margin-bottom: 50px;
     display: block;
@@ -30,30 +27,76 @@ body {
     background-attachment: fixed;
 }
 
-/* this section is meant to make a background which has a bit of blur over it. */
+/* The main Area where the user will be paying attention to */
+
 div.background {
     content: "";
-    background: url("img/CTE_29.jpg") fixed;
+    background: url("CTE_29.jpg") fixed;
     filter: blur(5px);
     height: 300mm;
     position: absolute;
-    width: 79.45%;
+    width: 80%;
 }
+
+/* Div.background gives the homepage a certain image & gives certain text styles */
+
+div.eightythree {
+    content: "";
+    background: url("CTE_83.jpg") fixed;
+    filter: blur(5px);
+    height: 300mm;
+    position: absolute;
+    width: 80%;
+}
+
+/* div.eightythree changes the background & styles of the about page */
+
+div.fiftyfive {
+    content: "";
+    background: url("CTE_55.jpg") fixed;
+    filter: blur(5px);
+    height: 305mm;
+    position: absolute;
+    width: 80%;
+}
+
+/* div.fiftyfive changes the background & styles of the contact page */
+
+div.sixty {
+    content: "";
+    background: url("CTE_60.jpg") fixed;
+    filter: blur(5px);
+    height: 300mm;
+    position: absolute;
+    width: 80%;
+}
+
+/* div.sixty changes the background & styles of the services page */
+
+div.skillsUSA {
+    content: "";
+    background: url("skillsUSA.jpg") fixed;
+    filter: blur(5px);
+    height: 300mm;
+    position: absolute;
+    width: 80%;
+}
+
+/* div.skillsUSA changes the background & styles of the ctso page */
 
 div.content {
     position: relative;
-
     color: #fc4a1a;  
     color: -webkit-linear-gradient(to bottom, #f7b733, #fc4a1a);  
     color: linear-gradient(to bottom, #f7b733, #fc4a1a); 
-
- 
     font-family: 'Nunito', sans-serif;
     font-size: 2em;
     height: 300mm;
     width: 80%;
     margin-left: 19px;
 }
+
+/* Div.content just edits the main big text the user sees when entering the page */
 
 div.thanos {
     position: absolute;
@@ -63,6 +106,8 @@ div.thanos {
     font-family: Marker Felt, fantasy;
     filter: blur(1.5px);
 }
+
+/* div.thanos changes the links & text styles */
 
 nav.horizontalNavigation {
     font-family: Marker Felt, fantasy;
@@ -89,6 +134,8 @@ nav.horizontalNavigation a {
       color: rgb(70, 5, 5);
 }
 
+/* All the horizontal navigations edit the links position, colors & setup */
+
 body>div.content>nav.horizontalNavigation a:link,
 body>div.content>nav.horizontalNavigation a:visited {
     text-decoration-line: underline;
@@ -97,4 +144,14 @@ body>div.content>nav.horizontalNavigation a:visited {
 body>div.content>nav.horizontalNavigation a:hover,
 body>div.content>nav.horizontalNavigation a:active {
     color: rgb(212, 19, 164);
+}
+
+/* The active & hover styles make it so therefore the links turn pink when hovered over and are red normally */
+
+div.Contactinfo {
+    color: rgb(243, 230, 41);
+    position: relative; 
+    font-family: 'Nunito', sans-serif;
+    margin-left: 200px;
+    font-size: 0.5em;
 }
