@@ -70,15 +70,16 @@ nav.horizontalNavigation {
     display: block;
     width: 100%;
     list-style-type: none;
-    margin-left: 105px;
+    margin-left: 100px;
     margin-top: 25px;
+    box-sizing: border-box;
 }
 
 nav.horizontalNavigation ul li {
     list-style-type: none;
     display: block;
     float: left;
-    width: 24%;   
+    width: 20%;   
 }
 
 nav.horizontalNavigation a {
