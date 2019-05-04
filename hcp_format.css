@@ -155,3 +155,15 @@ div.Contactinfo {
     margin-left: 200px;
     font-size: 0.5em;
 }
+
+/* contact info edits the main text on the contact page */
+
+@media only screen and (min-width: 481px) {
+
+}
+
+@media only screen and (max-width: 769px) {
+    
+}
+
+/* The media Query's make it so therefore when the user is accessing this site regardless of the device being used, it shall appear nice */
