@@ -55,7 +55,7 @@ div.fiftyfive {
     content: "";
     background: url("CTE_55.jpg") fixed;
     filter: blur(5px);
-    height: 305mm;
+    height: 300mm;
     position: absolute;
     width: 80%;
 }
@@ -204,3 +204,12 @@ div.Contactinfo {
 }
 
 /* The media Query's make it so therefore when the user is accessing this site regardless of the device being used, it shall appear nice */
+
+div.raccoon {
+    margin-left: 300px;
+    margin-top: 400px;
+    position: absolute;
+    font-size: 5em;
+    color: rgb(66, 66, 66);
+    font-family: Marker Felt, fantasy;
+}
