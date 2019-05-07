@@ -159,16 +159,16 @@ div.Contactinfo {
 /* contact info edits the main text on the contact page */
 
 @media only screen and (min-width: 481px) {
-    /* body {
-        width: 91.14%;
+    body {
+        /* width: 91.14%;
         padding-left: 0.93%;
-        padding-right: 0.93%;
+        padding-right: .02%; */
         clear: none;
         float: none;
         margin-left: auto;
 
 
-    } */
+    }
 
     nav a {
         width: 32%;
