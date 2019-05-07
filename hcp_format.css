@@ -75,7 +75,7 @@ div.sixty {
 
 div.skillsUSA {
     content: "";
-    background: url("skillsUSA.jpg") fixed;
+    background: url("CTE_60.jpg") fixed;
     filter: blur(5px);
     height: 300mm;
     position: absolute;
@@ -103,14 +103,14 @@ div.thanos {
     margin-top: 200px;
     margin-left: 340px;
     font-size: 3em;
-    font-family: Marker Felt, fantasy;
-    filter: blur(1.5px);
+    font-family: 'Flavors', cursive;
+    filter: blur(1px);
 }
 
 /* div.thanos changes the links & text styles */
 
 nav.horizontalNavigation {
-    font-family: Marker Felt, fantasy;
+    font-family: 'EB Garamond', serif;
     float: left;
     display: block;
     width: 100%;
@@ -211,5 +211,5 @@ div.raccoon {
     position: absolute;
     font-size: 5em;
     color: rgb(66, 66, 66);
-    font-family: Marker Felt, fantasy;
+    font-family: 'Flavors', cursive;
 }
