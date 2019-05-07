@@ -45,8 +45,6 @@
 
         <div class="contactInfo">
 
-
-
             <h1> <em>Location</em></h1>
             <address>
                 Cosmetology Salon
@@ -67,6 +65,156 @@
             </p>
 
 
+            <section class="survey">
+
+                <!-- Begins Here -->
+
+                <form id="survey" action="" method="post">
+                    <fieldset id="custInfo">
+                        <legend>Audience Information</legend>
+
+                        <div class="formRow">
+                            <label for="name">Name*</label>
+                            <input name="custName" id="name" type="text" placeholder="First and Last Name" required />
+                        </div>
+                        <br>
+                        <div class="formRow">
+                            <label for="city">City</label>
+                            <input name="custCity" id="city" type="text" value="Phoenix" />
+                        </div>
+                        <br>
+                        <div class="formRow">
+                            <label for="state">State</label>
+                            <input name="custState" id="state" type="text" value="AZ" />
+                        </div>
+                        <br>
+                        <div class="formRow">
+                            <label for="phone">Phone Number</label>
+                            <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"
+                                pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+                        </div>
+                        <br>
+                        <div class="formRow">
+                            <label for="email">E-Mail</label>
+                            <input name="custEmil" id="mail" type="emial" required />
+                        </div>
+                        <br>
+                        <div class="formRow">
+                            <label for="hair">Where did you hear about us? (select all that apply)<br />
+                            </label>
+                            <select name="infoSrc" id="info" size="5" multiple>
+                                <option value="internet">Internet</option>
+                                <option value="mag">Magazine</option>
+                                <option value="news">Social Media</option>
+                                <option value="word">Friend</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="formRow">
+                            <label for="hair">How do you like your hair Styled?</label>
+                            <input type="text" name="favHair" id="hair" list="hairType">
+                            <datalist id="hairType">
+                                <option value="Short">
+                                <option value="Medium">
+                                <option value="Long">
+                                <option value="Straight-Long">
+                                <option value="Straight-Medium">
+                                <option value="Straight-Short">
+                                <option value="Curly-Short">
+                                <option value="Curly-Medium">
+                                <option value="Curly-Long">
+                                <option value="Bald">
+                                </option>
+                            </datalist>
+                        </div>
+                        <br>
+                        <div class="formRow">
+                            <label for="hairSpin">How many times a month do you get a haircut?</label>
+                            <input name="hairOut" id="hairSpin" type="number" placeholder="1" step="1" min="0"
+                                max="10" />
+                        </div>
+                        <br>
+                        <input name="mailMe" id="mailCB" value="yes" type="checkbox">
+                        <label for="mailCB">Add me to your mailing list for notice of future events</label>
+                    </fieldset>
+
+                    <br>
+                    <br>
+
+                    <!-- Survey 2 -->
+                    <fieldset id="expInfo">
+                        <legend>Questions About You!</legend>
+                        <br>
+                        <div class="formRow">
+                            <label for="order">What's your favorite hair color?</label>
+                            <select name="orderType" id="order">
+                                <option value="order1">Red</option>
+                                <option value="order2">Orange</option>
+                                <option value="order3">Yellow</option>
+                                <option value="order4">Green</option>
+                                <option value="order5">Blue</option>
+                                <option value="order6">Purple</option>
+                                <option value="order7">Silver</option>
+                                <option value="order8">Black</option>
+                                <option value="order9">Brown</option>
+                                <option value="order10">Blonde</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="formRow">
+                            <label>Do you enjoy hairstyling at West-MEC?</label>
+                            <fieldset class="optGroup">
+                                <label for="fYes">Yes</label>
+                                <input name="sFriend" id="fYes" value="Yes" type="radio">
+                                <label for="fNo">No</label>
+                                <input name="sFriend" id="fNo" value="No" type="radio">
+                            </fieldset>
+                        </div>
+                        <br>
+                        <div class="formRow">
+                            <label>Gel?</label>
+                            <fieldset class="optGroup">
+                                <label for="cYes">Yes</label>
+                                <input name="oCorrect" id="cYes" value="Yes" type="radio">
+                                <label for="cNo">No</label>
+                                <input name="oCorrect" id="cNo" value="No" type="radio">
+                            </fieldset>
+                        </div>
+                        <br>
+                        <div class="formRow">
+                            <label>Do you spend time doing other peoples hair?</label>
+                            <fieldset class="optGroup">
+                                <label for="hYes">Yes</label>
+                                <input name="foodHot" id="hYes" value="Yes" type="radio">
+                                <label for="hNo">No</label>
+                                <input name="foodHot" id="hNo" value="No" type="radio">
+                            </fieldset>
+                        </div>
+                        <br>
+                        <div class="formRow">
+                            <label for="rangeBox">Rate the overall presentation<br />
+                                (0=poor; 10=great)</label>
+                            0
+                            <input type="range" name="serviceRate" id="rangeBox" value="5" step="1" min="0" max="10">
+                            10
+                        </div>
+                        <br>
+                        <label for="commBox">Tell us how we could improve.</label>
+                        <textarea name="custExp" id="commBox"></textarea>
+                        <br>
+                    </fieldset>
+                    <br>
+                    <div id="buttons">
+                        <input type="submit" value="Submit my Survey" />
+                        <input type="reset" value="Cancel" />
+                    </div>
+
+                </form>
+
+                <!-- Ends Here -->
+
+            </section>
 
         </div>
 
