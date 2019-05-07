@@ -99,9 +99,9 @@ div.content {
 /* Div.content just edits the main big text the user sees when entering the page */
 
 div.thanos {
-    position: absolute;
-    margin-top: 200px;
-    margin-left: 340px;
+    position: relative;
+    text-align: center;
+    top: 8%;
     font-size: 3em;
     font-family: Marker Felt, fantasy;
     filter: blur(1.5px);
@@ -118,6 +118,7 @@ nav.horizontalNavigation {
     margin-left: 100px;
     margin-top: 25px;
     box-sizing: border-box;
+    clear: both;
 }
 
 nav.horizontalNavigation ul li {
