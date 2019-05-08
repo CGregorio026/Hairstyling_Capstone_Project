@@ -75,7 +75,6 @@ div.sixty {
 
 div.skillsUSA {
     content: "";
-    
     filter: blur(5px);
     height: 300mm;
     position: absolute;
@@ -93,7 +92,7 @@ div.content {
     font-size: 2em;
     height: 300mm;
     width: 80%;
-    margin-left: 19px;
+    margin-left: 90px;
 }
 
 /* Div.content just edits the main big text the user sees when entering the page */
@@ -115,7 +114,7 @@ nav.horizontalNavigation {
     display: block;
     width: 100%;
     list-style-type: none;
-    margin-left: 100px;
+    margin-left: 40px;
     margin-top: 25px;
     box-sizing: border-box;
     clear: both;
