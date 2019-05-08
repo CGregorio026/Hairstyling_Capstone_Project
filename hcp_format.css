@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-
+/* The main Background of everything */
 
 html {
     background: #43C6AC;
@@ -8,7 +8,7 @@ html {
     background: linear-gradient(to top, #191654, #43C6AC);
 }
 
-/* The main Background of everything */
+/* The main Area where the user will be paying attention to */
 
 body {
     height: 100%;
@@ -27,7 +27,7 @@ body {
     background-attachment: fixed;
 }
 
-/* The main Area where the user will be paying attention to */
+/* Div.background gives the homepage a certain image & gives certain text styles */
 
 div.background {
     content: "";
@@ -38,7 +38,7 @@ div.background {
     width: 80%;
 }
 
-/* Div.background gives the homepage a certain image & gives certain text styles */
+/* div.eightythree changes the background & styles of the about page */
 
 div.eightythree {
     content: "";
@@ -49,7 +49,7 @@ div.eightythree {
     width: 80%;
 }
 
-/* div.eightythree changes the background & styles of the about page */
+/* div.fiftyfive changes the background & styles of the contact page */
 
 div.fiftyfive {
     content: "";
@@ -60,7 +60,7 @@ div.fiftyfive {
     width: 80%;
 }
 
-/* div.fiftyfive changes the background & styles of the contact page */
+/* div.sixty changes the background & styles of the services page */
 
 div.sixty {
     content: "";
@@ -71,7 +71,7 @@ div.sixty {
     width: 80%;
 }
 
-/* div.sixty changes the background & styles of the services page */
+/* div.skillsUSA changes the background & styles of the ctso page */
 
 div.skillsUSA {
     content: "";
@@ -82,7 +82,7 @@ div.skillsUSA {
     width: 80%;
 }
 
-/* div.skillsUSA changes the background & styles of the ctso page */
+/* div.content just edits the main big text the user sees when entering the page */
 
 div.content {
     position: relative;
@@ -96,9 +96,9 @@ div.content {
     margin-left: 19px;
 }
 
-/* Div.content just edits the main big text the user sees when entering the page */
+/* div.thanos changes the links & text styles */
 
-div.thanos {
+div.title {
     position: relative;
     text-align: center;
     top: 8%;
@@ -107,7 +107,7 @@ div.thanos {
     filter: blur(1.5px);
 }
 
-/* div.thanos changes the links & text styles */
+/* All the horizontal navigations edit the links position, colors & setup */
 
 nav.horizontalNavigation {
     font-family: Marker Felt, fantasy;
@@ -135,7 +135,7 @@ nav.horizontalNavigation a {
     color: #460505;
 }
 
-/* All the horizontal navigations edit the links position, colors & setup */
+/* The active & hover styles make it so therefore the links turn pink when hovered over and are red normally */
 
 body>div.content>nav.horizontalNavigation a:link,
 body>div.content>nav.horizontalNavigation a:visited {
@@ -147,7 +147,7 @@ body>div.content>nav.horizontalNavigation a:active {
     color: #d413a4;
 }
 
-/* The active & hover styles make it so therefore the links turn pink when hovered over and are red normally */
+/* contact info edits the main text on the contact page */
 
 div.contactInfo {
     color: #9ba2f1;
@@ -159,7 +159,7 @@ div.contactInfo {
     border: 1mm solid black;
 }
 
-/* contact info edits the main text on the contact page */
+
 
 div.contactInfo>p>a:link,
 div.contactInfo>p>a:visited {
@@ -172,6 +172,8 @@ div.contactInfo>p>a:active {
     text-decoration: underline;
     color: #3D7EAA;
 }
+
+/* The media queries make it so when the user is accessing this site, regardless of the device being used, it shall appear to fit their viewports */
 
 @media only screen and (min-width: 481px) {
     body {
@@ -218,9 +220,9 @@ div.contactInfo>p>a:active {
     }
 }
 
-/* The media Query's make it so therefore when the user is accessing this site regardless of the device being used, it shall appear nice */
 
-div.raccoon {
+
+div.info {
     margin-left: 300px;
     margin-top: 400px;
     position: absolute;
