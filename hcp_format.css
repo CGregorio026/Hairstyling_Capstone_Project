@@ -75,7 +75,7 @@ div.sixty {
 
 div.skillsUSA {
     content: "";
-    background: url("CTE_60.jpg") fixed;
+    
     filter: blur(5px);
     height: 300mm;
     position: absolute;
