@@ -219,9 +219,8 @@ img#instagram:hover {
 
 div.info {
     margin-left: 30px;
-    margin-top: 185px;
-    position: absolute;
     font-size: 1em;
+    margin-top: 30px;
     color: #ee0000;
     font-family: 'Flavors', cursive;
 }
