@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* This clears both sides of the row so only that row will appear within that horizontal area. */
+div.row {
+    clear: both;
+}
+
+/* After each div, invisible contents is placed preventing stuff from being placed in that row, preventing container collapse and having things clip inside of each other. */
+div.row div.col-2-3 p::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* This style rule here selects every div that has a class beginning with "col-". */
+div [class^="col-"] {
+    float: left;
+}
+
+div.col-1-3 {
+    width: 33.3%;
+}
+
+div.col-2-3 {
+    width: 66.6%
+}
