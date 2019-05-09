@@ -15,7 +15,7 @@
 
 <body>
     <div class="content">
-        <header>
+        <header id="navHeader">
             <nav class="horizontalNavigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -27,11 +27,15 @@
             </nav>
         </header>
 
-        <div class="title">
-            HairStyling
-        </div>
+        <!-- grid styles to make content that takes up different sizes of the page -->
         <div>
-            <!-- grid styles to make content that takes up different sizes of the page -->
+            <div class="row">
+                <div class="title">
+                    HairStyling
+                </div>
+            </div>
+
+
             <!-- row 1 -->
             <div class="row">
                 <!-- column 1, 2/3 -->
@@ -44,15 +48,14 @@
                 <!-- column 2, 1/3 -->
                 <div class="col-1-3">
                     <section>
-                        <img src="blended-ash-bronde.jpg" alt="">
+                        <img id="colorPicture" src="blended-ash-bronde.jpg" alt="">
                     </section>
                 </div>
                 <!-- end column 2 -->
             </div>
             <!-- end row 1 -->
         </div>
-    </div>
-    <!-- <script src="hcp_script.js"></script> -->
+        <!-- <script src="hcp_script.js"></script> -->
 </body>
 
 </html>

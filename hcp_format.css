@@ -39,6 +39,17 @@ div.content {
     margin-right: auto;
 }
 
+/* prevents any information from being displayed on the same line */
+header#navHeader {
+    clear: both;
+}
+
+header#navHeader::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* All the horizontal navigations edit the links position, colors & setup */
 
 nav.horizontalNavigation {
@@ -76,10 +87,9 @@ nav.horizontalNavigation::after {
 /* div.title changes the links & text styles */
 
 div.title {
+    top: 12%;
     text-align: center;
-    font-size: 3em;
     font-family: 'Flavors', cursive;
-    filter: blur(1px);
     clear: both;
 }
 
@@ -108,7 +118,9 @@ div.contactInfo {
     text-align: center;
 }
 
-
+div.row {
+    line-height: 1.1em;
+}
 
 div.contactInfo>p>a:link,
 div.contactInfo>p>a:visited {
@@ -120,6 +132,10 @@ div.contactInfo>p>a:hover,
 div.contactInfo>p>a:active {
     text-decoration: underline;
     color: #3D7EAA;
+}
+
+img#colorPicture {
+    width: 60%;
 }
 
 /* The media queries make it so when the user is accessing this site, regardless of the device being used, it shall appear to fit their viewports */
