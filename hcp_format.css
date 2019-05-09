@@ -39,16 +39,6 @@ div.content {
     margin-right: auto;
 }
 
-/* prevents any information from being displayed on the same line */
-header#navHeader {
-    clear: both;
-}
-
-header#navHeader::after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 /* All the horizontal navigations edit the links position, colors & setup */
 
@@ -145,11 +135,11 @@ img#colorPicture {
 
 footer {
     width: 100%;
-    /* clear: both; */
+    clear: both;
 }
 
 img#instagram {
-    width: 15%;
+    width: 10%;
     filter: none;
     background: #833ab4;
     background: -webkit-linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);
@@ -157,9 +147,29 @@ img#instagram {
     transition: background 3s;
 }
 
+/* upon hovering over the instagram image, changes it to black and white */
 img#instagram:hover {
     filter: invert(1);
     background: white;
+}
+
+/* changes the color of the clock text to black */
+section#time {
+    color: black;
+    font-size: 0.8em;
+}
+
+/* prevents the average viewer from seeing this on the main page */
+a#navicon {
+    display: none
+}
+
+div.info {
+    margin-left: 30px;
+    font-size: 1em;
+    margin-top: 30px;
+    color: #ee0000;
+    font-family: 'Flavors', cursive;
 }
 
 /* The media queries make it so when the user is accessing this site, regardless of the device being used, it shall appear to fit their viewports */
@@ -206,8 +216,6 @@ img#instagram:hover {
 }
 
 
-
-
 @media only screen and (max-width: 769px) {
     html {
         background-color: #b07c30;
@@ -215,12 +223,39 @@ img#instagram:hover {
     }
 }
 
+@media only screen and (max-width: 480px) {
 
+    /* navicon styles */
+    /* shows the nav icon on mobile */
+    a#navicon {
+        display: block;
+    }
 
-div.info {
-    margin-left: 30px;
-    font-size: 1em;
-    margin-top: 30px;
-    color: #ee0000;
-    font-family: 'Flavors', cursive;
+    /* moves the nav to the center of the page, and align all of the content to the center of the page */
+    nav.horizontalNavigation {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* will not display the nav in mobile unless hovered over (seen later) */
+    nav.horizontalNavigation ul {
+        display: none;
+    }
+
+    /* all the list items will take up their entire row, and fit within their own general line. */
+    nav.horizontalNavigation ul li {
+        width: 100%;
+        clear: both;
+        line-height: 1.3em;
+        font-size: 0.8em;
+    }
+
+    /* upon hovering over the navicon and the links will display the links */
+    a#navicon:hover+ul,
+    nav.horizontalNavigation ul:hover {
+        display: block
+    }
+
+    /* end navicon styles */
 }
