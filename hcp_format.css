@@ -27,84 +27,16 @@ body {
     background-attachment: fixed;
 }
 
-/* Div.background gives the homepage a certain image & gives certain text styles */
-
-div.background {
-    content: "";
-    background: url("CTE_29.jpg") fixed;
-    filter: blur(5px);
-    height: 300mm;
-    position: absolute;
-    width: 80%;
-}
-
-/* div.eightythree changes the background & styles of the about page */
-
-div.eightythree {
-    content: "";
-    background: url("CTE_83.jpg") fixed;
-    filter: blur(5px);
-    height: 300mm;
-    position: absolute;
-    width: 80%;
-}
-
-/* div.fiftyfive changes the background & styles of the contact page */
-
-div.fiftyfive {
-    content: "";
-    background: url("CTE_55.jpg") fixed;
-    filter: blur(5px);
-    height: 300mm;
-    position: absolute;
-    width: 80%;
-}
-
-/* div.sixty changes the background & styles of the services page */
-
-div.sixty {
-    content: "";
-    background: url("CTE_60.jpg") fixed;
-    filter: blur(5px);
-    height: 300mm;
-    position: absolute;
-    width: 80%;
-}
-
-/* div.skillsUSA changes the background & styles of the ctso page */
-
-div.skillsUSA {
-    content: "";
-
-    filter: blur(5px);
-    height: 300mm;
-    position: absolute;
-    width: 80%;
-}
-
 /* div.content just edits the main big text the user sees when entering the page */
 
 div.content {
-    position: relative;
     color: #fc4a1a;
-    color: -webkit-linear-gradient(to bottom, #f7b733, #fc4a1a);
-    color: linear-gradient(to bottom, #f7b733, #fc4a1a);
     font-family: 'Nunito', sans-serif;
     font-size: 2em;
     height: 300mm;
-    width: 80%;
-    margin-left: 90px;
-}
-
-/* div.thanos changes the links & text styles */
-
-div.title {
-    position: relative;
-    text-align: center;
-    top: 8%;
-    font-size: 3em;
-    font-family: 'Flavors', cursive;
-    filter: blur(1px);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* All the horizontal navigations edit the links position, colors & setup */
@@ -133,6 +65,22 @@ nav.horizontalNavigation a {
     display: block;
     text-align: center;
     color: #460505;
+}
+
+nav.horizontalNavigation::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* div.title changes the links & text styles */
+
+div.title {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Flavors', cursive;
+    filter: blur(1px);
+    clear: both;
 }
 
 /* The active & hover styles make it so therefore the links turn pink when hovered over and are red normally */
@@ -205,6 +153,12 @@ div.contactInfo>p>a:active {
         clear: left
     }
 
+    nav a::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
     footer {
         font-size: 0.8em;
     }
@@ -229,4 +183,4 @@ div.info {
     font-size: 5em;
     color: #424242;
     font-family: 'Flavors', cursive;
- }
+}
