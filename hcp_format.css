@@ -134,8 +134,13 @@ div.contactInfo>p>a:active {
     color: #3D7EAA;
 }
 
-img#colorPicture {
+section#coloredBody {
     width: 60%;
+}
+
+img#colorPicture {
+    width: 100%;
+    height: 100%;
 }
 
 /* The media queries make it so when the user is accessing this site, regardless of the device being used, it shall appear to fit their viewports */
