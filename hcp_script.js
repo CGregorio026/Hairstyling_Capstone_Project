@@ -24,4 +24,5 @@ function colorGenerator() {
     document.getElementById("coloredBody").style.backgroundColor = "#" + colorNumber;
     // upon clicking this button, it will run the function again, generating a new color.
     document.getElementById("colorButton").onclick = colorGenerator;
+    document.getElementById("colorPicture").onclick = colorGenerator;
 }
