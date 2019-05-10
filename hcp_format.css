@@ -3,7 +3,6 @@
 /* The main Background of everything */
 
 html {
-    height: 100%;
     background: #43C6AC;
     background: -webkit-linear-gradient(to top, #191654, #43C6AC);
     background: linear-gradient(to top, #191654, #43C6AC);
