@@ -6,6 +6,7 @@ html {
     background: #43C6AC;
     background: -webkit-linear-gradient(to top, #191654, #43C6AC);
     background: linear-gradient(to top, #191654, #43C6AC);
+    background: no-repeat;
 }
 
 /* The main Area where the user will be paying attention to */
