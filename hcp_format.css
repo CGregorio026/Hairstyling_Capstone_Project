@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: Nunito;
+    src: url('https://fonts.googleapis.com/css?family=Nunito');
+}
+
 /* The main Background of everything */
 
 html {
@@ -78,9 +83,9 @@ nav.horizontalNavigation::after {
 /* div.title changes the links & text styles */
 
 div.title {
-    top: 12%;
+    top: 15%;
     text-align: center;
-    font-family: 'Flavors', cursive;
+    font-family: "Nunito";
     clear: both;
 }
 
@@ -165,10 +170,11 @@ div.info {
     font-size: 1em;
     margin-top: 30px;
     color: #9695e4;
-    font-family: 'Flavors', cursive;
+    font-family: Helvetica, sans-serif;
     background-color: white;
     padding: 2px 3px;
     border: 5px solid black;
+    line-height: 1.2em;
 }
 
 span#desktopButton {
