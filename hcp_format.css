@@ -283,3 +283,24 @@ span#mobileButton {
         display: none;
     }
 }
+
+
+
+
+
+
+/* sevice page */
+aside.srv {
+    display: block;
+
+}
+
+section>p.srv1 {
+    line-height: 1.4em;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+section.srv1 {
+    clear: both;
+}
