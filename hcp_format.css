@@ -216,14 +216,6 @@ span#mobileButton {
     }
 }
 
-
-@media only screen and (max-width: 769px) {
-    html {
-        background-color: #b07c30;
-        margin: 0px auto;
-    }
-}
-
 @media only screen and (max-width: 860px) {
 
     /* navicon styles */
