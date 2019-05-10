@@ -6,6 +6,7 @@ html {
     background: #43C6AC;
     background: -webkit-linear-gradient(to top, #191654, #43C6AC);
     background: linear-gradient(to top, #191654, #43C6AC);
+    background-repeat: no-repeat;
 }
 
 /* The main Area where the user will be paying attention to */
@@ -125,9 +126,6 @@ div.contactInfo>p>a:active {
     color: #3D7EAA;
 }
 
-section#coloredBody {
-    width: 60%;
-}
 
 img#colorPicture {
     width: 100%;
@@ -139,19 +137,16 @@ footer {
     clear: both;
 }
 
-img#instagram {
-    width: 10%;
+img.socialMedia {
+    width: 20%;
+    padding: 2%;
     filter: none;
-    background: #833ab4;
-    background: -webkit-linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);
-    transition: background 3s;
+    transition: filter 2s;
 }
 
 /* upon hovering over the instagram image, changes it to black and white */
-img#instagram:hover {
-    filter: invert(1);
-    background: white;
+img.socialMedia:hover {
+    filter: grayscale(1);
 }
 
 /* changes the color of the clock text to black */
@@ -173,6 +168,14 @@ div.info {
     font-family: 'Flavors', cursive;
 }
 
+span#desktopButton {
+    display: inline;
+}
+
+span#mobileButton {
+    display: none;
+}
+
 /* The media queries make it so when the user is accessing this site, regardless of the device being used, it shall appear to fit their viewports */
 
 @media only screen and (min-width: 481px) {
@@ -183,8 +186,6 @@ div.info {
         clear: none;
         float: none;
         margin-left: auto;
-
-
     }
 
     nav a {
@@ -216,20 +217,15 @@ div.info {
     }
 }
 
-
-@media only screen and (max-width: 769px) {
-    html {
-        background-color: #b07c30;
-        margin: 0px auto;
-    }
-}
-
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 860px) {
 
     /* navicon styles */
     /* shows the nav icon on mobile */
     a#navicon {
         display: block;
+        width: 10%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /* moves the nav to the center of the page, and align all of the content to the center of the page */
@@ -242,6 +238,30 @@ div.info {
     /* will not display the nav in mobile unless hovered over (seen later) */
     nav.horizontalNavigation ul {
         display: none;
+        clear: both;
+    }
+
+
+    /* upon hovering over the navicon and the links will display the links */
+    a#navicon:hover+ul,
+    nav.horizontalNavigation ul:hover {
+        display: block
+    }
+
+    /* end navicon styles */
+
+    span#desktopButton {
+        display: none;
+    }
+
+    span#mobileButton {
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    a#navicon {
+        width: 100%;
     }
 
     /* all the list items will take up their entire row, and fit within their own general line. */
@@ -252,11 +272,11 @@ div.info {
         font-size: 0.8em;
     }
 
-    /* upon hovering over the navicon and the links will display the links */
-    a#navicon:hover+ul,
-    nav.horizontalNavigation ul:hover {
-        display: block
+    img#colorPicture {
+        width: 100%;
     }
 
-    /* end navicon styles */
+    input#colorButton {
+        display: none;
+    }
 }
