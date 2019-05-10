@@ -106,6 +106,7 @@ div.contactInfo {
     background: #ffffff;
     border: 1mm solid black;
     text-align: center;
+    border-radius: 11px;
 }
 
 div.row {
