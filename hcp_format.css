@@ -31,7 +31,7 @@ body {
 /* div.content just edits the main big text the user sees when entering the page */
 
 div.content {
-    color: #fc4a1a;
+    color: #9c91f8;
     font-family: 'Nunito', sans-serif;
     font-size: 2em;
     height: 100%;
@@ -164,8 +164,11 @@ div.info {
     margin-left: 30px;
     font-size: 1em;
     margin-top: 30px;
-    color: #ee0000;
+    color: #9695e4;
     font-family: 'Flavors', cursive;
+    background-color: white;
+    padding: 2px 3px;
+    border: 5px solid black;
 }
 
 span#desktopButton {
