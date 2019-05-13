@@ -138,16 +138,17 @@ footer {
 }
 
 img.socialMedia {
-    width: 20%;
-    padding: 2%;
+    width: 24%;
+    padding: 5%;
     filter: none;
-    transition: filter 2s;
+    transition: filter 1s;
 }
 
 /* upon hovering over the instagram image, changes it to black and white */
 img.socialMedia:hover {
     filter: grayscale(1);
 }
+
 
 /* changes the color of the clock text to black */
 section#time {
@@ -286,11 +287,7 @@ span#mobileButton {
 }
 
 
-
-
-
-
-/* sevice page */
+/* service page */
 aside.srv {
     display: block;
 
@@ -308,19 +305,22 @@ section.srv1 {
 
 
 
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 
-th, td{
-  padding: 15px;
+th,
+td {
+    padding: 15px;
 }
 
-th{
-  text-align: left;
+th {
+    text-align: left;
 }
 
-table{
-  border-spacing: : 5px;
+table {
+    border-spacing: 5px;
 }
