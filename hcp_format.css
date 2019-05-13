@@ -78,10 +78,16 @@ nav.horizontalNavigation::after {
 /* div.title changes the links & text styles */
 
 div.title {
-    top: 15%;
+    position: relative;
     text-align: center;
     font-family: "Nunito";
     clear: both;
+    top: 20px;
+}
+
+/* this div introduces the page, so it is separate from the text of the rest of the page */
+div#intro {
+    padding: 2%;
 }
 
 /* The active & hover styles make it so therefore the links turn pink when hovered over and are red normally */
