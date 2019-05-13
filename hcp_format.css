@@ -305,3 +305,22 @@ section>p.srv1 {
 section.srv1 {
     clear: both;
 }
+
+
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td{
+  padding: 15px;
+}
+
+th{
+  text-align: left;
+}
+
+table{
+  border-spacing: : 5px;
+}
