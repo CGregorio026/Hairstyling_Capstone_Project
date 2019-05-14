@@ -327,8 +327,10 @@ section.srv1 {
 table,
 th,
 td {
-    border: 1px solid black;
+    border: 3px solid rgb(47, 103, 107);
     border-collapse: collapse;
+    font-size: 92%;
+    color: #353572;
 }
 
 th,
@@ -342,4 +344,16 @@ th {
 
 table {
     border-spacing: 5px;
+    position: relative;
+    top: 20px;
+    padding: 75px;
+}
+
+th {
+    height: 5px;
+}
+
+span.money {
+    text-decoration: underline;
+    color: #2384a1;
 }
