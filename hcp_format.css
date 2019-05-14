@@ -290,6 +290,19 @@ span#mobileButton {
     input#colorButton {
         display: none;
     }
+
+    img.socialMedia {
+        width: 20%;
+        padding: 1%;
+    }
+
+    div.content {
+        font-size: 1.4em;
+    }
+
+    section#time {
+        display: none;
+    }
 }
 
 

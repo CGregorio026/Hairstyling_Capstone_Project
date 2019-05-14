@@ -50,8 +50,8 @@
 
                 <form id="survey" action="" method="post">
                     <fieldset id="custInfo">
-                        <legend>Audience Information</legend>
-
+                        <legend>Survey Information</legend>
+                        <p>* = required fields</p>
                         <div class="formRow">
                             <label for="name">Name*</label>
                             <input name="custName" id="name" type="text" placeholder="First and Last Name" required />
@@ -68,14 +68,14 @@
                         </div>
                         <br>
                         <div class="formRow">
-                            <label for="phone">Phone Number</label>
+                            <label for="phone">*Phone Number</label>
                             <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"
-                                pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+                                pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required />
                         </div>
                         <br>
                         <div class="formRow">
-                            <label for="email">E-Mail</label>
-                            <input name="custEmil" id="mail" type="emial" required />
+                            <label for="email">*E-Mail</label>
+                            <input name="custEmil" id="mail" type="email" required />
                         </div>
                         <br>
                         <div class="formRow">
@@ -91,7 +91,7 @@
                         </div>
                         <br>
                         <div class="formRow">
-                            <label for="hair">How do you like your hair Styled?</label>
+                            <label for="hair">How do you like your hair styled?</label>
                             <input type="text" name="favHair" id="hair" list="hairType">
                             <datalist id="hairType">
                                 <option value="Short">
@@ -171,21 +171,13 @@
                             </fieldset>
                         </div>
                         <br>
-                        <div class="formRow">
-                            <label for="rangeBox">Rate the overall presentation<br />
-                                (0=poor; 10=great)</label>
-                            0
-                            <input type="range" name="serviceRate" id="rangeBox" value="5" step="1" min="0" max="10">
-                            10
-                        </div>
-                        <br>
                         <label for="commBox">Tell us how we could improve.</label>
                         <textarea name="custExp" id="commBox"></textarea>
                         <br>
                     </fieldset>
                     <br>
                     <div id="buttons">
-                        <input type="submit" value="Submit my Survey" />
+                        <input id="submit" type="submit" value="Submit my Survey" />
                         <input type="reset" value="Cancel" />
                     </div>
 
@@ -242,6 +234,7 @@
                 </div>
             </div>
         </footer>
+        <script src="hcp_validation.js"></script>
 </body>
 
 </html>
