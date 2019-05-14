@@ -68,6 +68,7 @@ nav.horizontalNavigation a {
     text-align: center;
     color: #460505;
 }
+
 /* prevents container collapse from happening after the table, preventing other information from clipping into the nav. */
 nav.horizontalNavigation::after {
     content: "";
@@ -191,23 +192,10 @@ span#mobileButton {
 
 
 /* service page */
-aside.srv {
-    display: block;
-
-}
-
-section>p.srv1 {
-    line-height: 1.4em;
-    padding: 10px;
-    font-size: 1.2em;
-}
-
-section.srv1 {
-    clear: both;
-}
+/* Styles are cre created for the table in the sevice page  */
 
 
-
+/* creating the collapse for the border creates a solid line around the content.  */
 table,
 th,
 td {
@@ -232,9 +220,6 @@ table {
 
 @media only screen and (min-width: 481px) {
     body {
-        /* width: 91.14%;
-        padding-left: 0.93%;
-        padding-right: .02%; */
         clear: none;
         float: none;
         margin-left: auto;
