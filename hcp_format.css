@@ -68,7 +68,7 @@ nav.horizontalNavigation a {
     text-align: center;
     color: #460505;
 }
-
+/* prevents container collapse from happening after the table, preventing other information from clipping into the nav. */
 nav.horizontalNavigation::after {
     content: "";
     clear: both;
@@ -187,6 +187,47 @@ span#mobileButton {
     display: none;
 }
 
+
+
+
+/* service page */
+aside.srv {
+    display: block;
+
+}
+
+section>p.srv1 {
+    line-height: 1.4em;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+section.srv1 {
+    clear: both;
+}
+
+
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+}
+
+th {
+    text-align: left;
+}
+
+table {
+    border-spacing: 5px;
+}
+
 /* The media queries make it so when the user is accessing this site, regardless of the device being used, it shall appear to fit their viewports */
 
 @media only screen and (min-width: 481px) {
@@ -303,43 +344,4 @@ span#mobileButton {
     section#time {
         display: none;
     }
-}
-
-
-/* service page */
-aside.srv {
-    display: block;
-
-}
-
-section>p.srv1 {
-    line-height: 1.4em;
-    padding: 10px;
-    font-size: 1.2em;
-}
-
-section.srv1 {
-    clear: both;
-}
-
-
-
-table,
-th,
-td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-th,
-td {
-    padding: 15px;
-}
-
-th {
-    text-align: left;
-}
-
-table {
-    border-spacing: 5px;
 }

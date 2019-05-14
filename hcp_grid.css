@@ -16,7 +16,7 @@ div.row div.col-2-3 p::after {
 div [class^="col-"] {
     float: left;
 }
-
+/* These divs are sorted by the size of their name; the width directly correlating with the name of the div. */
 div.col-1-3 {
     width: 33.3%;
 }
