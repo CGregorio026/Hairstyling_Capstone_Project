@@ -300,6 +300,11 @@ span.money {
     span#mobileButton {
         display: inline;
     }
+
+    /* hides the image so it doesn't clip into the page */
+    img#skills {
+        display: none
+    }
 }
 
 @media only screen and (max-width: 480px) {
