@@ -190,17 +190,18 @@ span#mobileButton {
 
 
 
-
 /* service page */
-/* Styles are cre created for the table in the sevice page  */
+/* Styles are cre creat7yed for the table in the sevice page  */
 
 
 /* creating the collapse for the border creates a solid line around the content.  */
 table,
 th,
 td {
-    border: 1px solid black;
+    border: 2.5px solid rgb(14, 6, 34);
     border-collapse: collapse;
+    color: rgb(45, 53, 82);
+
 }
 
 th,
@@ -214,6 +215,11 @@ th {
 
 table {
     border-spacing: 5px;
+}
+
+span.money {
+    text-decoration: underline;
+    color: rgb(0, 41, 128);
 }
 
 /* The media queries make it so when the user is accessing this site, regardless of the device being used, it shall appear to fit their viewports */
